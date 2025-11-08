@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.controller.MainController"
+      spacing="10" alignment="CENTER"
+      style="-fx-padding: 20;">
+
+    <!-- Title -->
+    <Label text="💰 Financify - Personal Finance Assistant"
+           style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+
+    <!-- Input row -->
+    <HBox spacing="10">
+        <ChoiceBox fx:id="typeChoice" prefWidth="100"/>
+        <TextField fx:id="categoryField" promptText="Category" prefWidth="150"/>
+        <TextField fx:id="amountField" promptText="Amount" prefWidth="100"/>
+        <TextField fx:id="noteField" promptText="Note" prefWidth="150"/>
+        <Button text="Add" onAction="#handleAddExpense"/>
+    </HBox>
+
+    <!-- Table -->
+    <TableView fx:id="table" prefWidth="650">
+        <columns>
+            <TableColumn fx:id="colType" text="Type" prefWidth="100"/>
+            <TableColumn fx:id="colCategory" text="Category" prefWidth="150"/>
+            <TableColumn fx:id="colAmount" text="Amount" prefWidth="100"/>
+            <TableColumn fx:id="colNote" text="Note" prefWidth="200"/>
+            <TableColumn fx:id="colDate" text="Date" prefWidth="100"/>
+            <!-- 👇 new action column -->
+            <TableColumn fx:id="colAction" text="Actions" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <!-- Pie Chart -->
+    <PieChart fx:id="expenseChart" prefWidth="650" prefHeight="250"/>
+
+</VBox>
