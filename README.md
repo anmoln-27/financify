@@ -114,22 +114,11 @@ java -jar target/financify-1.0-SNAPSHOT-shaded.jar
 
 ---
 
-## 🧠 Future Enhancements
-
-- 🔍 Add filters (by date/category)
-- 📤 Export transactions to CSV/PDF
-- 👤 Add user login and authentication
-- 🌙 Dark mode UI
-
----
-
 ## 👨‍💻 Author
 
 **Anmol Nandwani**  
-📧 anmolnandwani@gmail.com  
-🔗 [GitHub Profile](https://github.com/anmoln-27)  
-💼 [LinkedIn (optional)](https://linkedin.com/in/anmolnandwani)
-
+📧 anmolnandwani366@gmail.com  
+🔗 [GitHub Profile](https://github.com/anmoln-27)
 ---
 
 ⭐ **If you like this project, consider giving it a star on GitHub!**
